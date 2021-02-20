@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Darg and Drop</title>
+  <!-- STYLING -->
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    #main {
+      width: 600px;
+      height: 500px;
+      background-color: lightpink;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="main" ondragover="allowDrop(event)" ondrop="drop(event)"></div>
+  <p></p>
+  <p></p>
+
+  <img src="./HTML5 Logo.png" id="img1" alt="HTML Logo" onclick="appendImage(event)" draggable="true" ondragstart="drag(event)">
+  <img src="./download.jpg" id="img2" alt="Second Image" onclick="appendImage(event)" draggable="true" ondragstart="drag(event)">
+  <button id="button" onclick="appendImage(event)" draggable="true" ondragstart="drag(event)">My Button</button>
+
+
+  <script src="./main.js"></script>
+</body>
+
+</html>
